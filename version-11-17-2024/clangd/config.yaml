@@ -1,0 +1,21 @@
+If:
+  PathMatch: .*.c
+CompileFlags:
+  Compiler: x86_64-w64-mingw32-gcc
+  Add:
+    - -D__CLANG_MAX_ALIGN_T_DEFINED
+    - -Wno-vla-extension
+    - -IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/14.1.0/include
+    - -IC:/msys64/mingw64/include
+    - -DLOCAL
+    - -Wall
+    - -O2
+    - -Wextra
+    - -Wshadow
+    - -Wconversion
+    - -Wfloat-equal
+    - -Wno-unused-const-variable
+    - -Wno-sign-conversion
+    - -std=c90
+Index:
+  Background: Skip

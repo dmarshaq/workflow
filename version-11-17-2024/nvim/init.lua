@@ -1,0 +1,1 @@
+require("dmarshaq.config.lazy")
