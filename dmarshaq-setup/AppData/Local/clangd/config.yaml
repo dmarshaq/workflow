@@ -16,6 +16,6 @@ CompileFlags:
     - -Wfloat-equal
     - -Wno-unused-const-variable
     - -Wno-sign-conversion
-    - -std=c90
+    - -std=c23
 Index:
   Background: Skip
