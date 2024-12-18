@@ -9,8 +9,10 @@ local config = wezterm.config_builder()
 config.front_end = "OpenGL"
 config.max_fps = 144
 config.default_cursor_style = "BlinkingBlock"
-config.animation_fps = 1
-config.cursor_blink_rate = 500
+config.animation_fps = 30
+config.cursor_blink_rate = 700
+config.cursor_blink_ease_in = "Constant"
+config.cursor_blink_ease_out = "Constant"
 config.term = "xterm-256color" -- Set the terminal type
 
 config.keys = {
@@ -32,7 +34,7 @@ config.keys = {
 			size = { Percent = 50 },
 		}),
 	},
-	-- Kill split
+	-- Quit split
 	{
 		key = "q",
 		mods = "CTRL",
@@ -44,16 +46,39 @@ config.keys = {
 		mods = "CTRL",
 		action = act.ActivatePaneDirection("Next"),
 	},
+	-- Toggle background
+	{
+		key = "B",
+		mods = "CTRL",
+		action = wezterm.action.EmitEvent("toggle-opacity"),
+	},
 }
 
-config.color_scheme = "Batman"
+config.color_scheme = "Afterglow"
 
-config.window_background_opacity = 0.9
+-- Background transparency
+local opacity = 0.9
+config.window_background_opacity = opacity
+
+-- Toggle function
+wezterm.on("toggle-opacity", function(window)
+	local overrides = window:get_config_overrides() or {}
+	if not overrides.window_background_opacity then
+		-- if no override is setup, override the default opacity value with 1.0
+		overrides.window_background_opacity = 1.0
+	else
+		-- if there is an override, make it nil so the opacity goes back to the default
+		overrides.window_background_opacity = nil
+	end
+	window:set_config_overrides(overrides)
+end)
+
 config.prefer_egl = true
 config.window_decorations = "RESIZE"
 config.window_close_confirmation = "AlwaysPrompt"
 config.scrollback_lines = 3000
 config.default_workspace = "home"
+config.adjust_window_size_when_changing_font_size = false
 
 -- Window Frame
 config.window_frame = {
@@ -66,6 +91,7 @@ config.window_frame = {
 }
 
 config.font = wezterm.font("JetBrains Mono")
+config.font_size = 10.0
 
 -- Tabs
 config.hide_tab_bar_if_only_one_tab = true
