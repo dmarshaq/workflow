@@ -52,6 +52,15 @@ config.keys = {
 		mods = "CTRL",
 		action = wezterm.action.EmitEvent("toggle-opacity"),
 	},
+	-- Run make command
+	{
+		key = "m",
+		mods = "CTRL",
+		action = act.Multiple({
+			act.SendString("make"),
+			act.SendKey({ key = "Enter" }),
+		}),
+	},
 }
 
 config.color_scheme = "Afterglow"
