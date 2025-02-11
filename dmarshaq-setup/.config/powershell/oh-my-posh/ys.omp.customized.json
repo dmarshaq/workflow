@@ -21,44 +21,22 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "lightBlue",
-          "style": "plain",
-          "template": "# ",
-          "type": "text"
-        },
-        {
-          "foreground": "red",
-          "style": "plain",
-          "template": " % ",
-          "type": "root"
-        },
-        {
-          "style": "plain",
-          "template": "<cyan>{{ .UserName }}</> <darkGray>@</> <green>{{ .HostName }}</> ",
-          "type": "session"
-        },
-        {
-          "foreground": "lightYellow",
+          "foreground": "lightWhite",
           "properties": {
             "style": "full"
           },
           "style": "plain",
-          "template": "<darkGray>in </>{{ .Path }} ",
+          "template": "<darkGray>[</>{{ .Path }}<darkGray>]</>",
           "type": "path"
         },
         {
+          "foreground": "lightWhite",
           "style": "plain",
-          "template": "<darkGray>on</> <white>git:</><cyan>{{ .HEAD }}</>{{ if .Working.Changed }}<red> x</>{{ end }} ",
+          "template": "<darkGray>-></> <white>git:</>{{ .HEAD }}",
           "type": "git",
           "properties": {
             "fetch_status": true
           }
-        },
-        {
-          "foreground": "darkGray",
-          "style": "plain",
-          "template": "[{{ .CurrentDate | date .Format }}]",
-          "type": "time"
         },
         {
           "foreground": "red",
@@ -74,7 +52,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "lightRed",
+          "foreground": "white",
           "style": "plain",
           "template": "\u03BB",
           "type": "text"

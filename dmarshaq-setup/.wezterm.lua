@@ -7,9 +7,9 @@ local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
 config.front_end = "OpenGL"
-config.max_fps = 144
+config.max_fps = 255
 config.default_cursor_style = "BlinkingBlock"
-config.animation_fps = 30
+config.animation_fps = 120
 config.cursor_blink_rate = 700
 config.cursor_blink_ease_in = "Constant"
 config.cursor_blink_ease_out = "Constant"
@@ -50,7 +50,7 @@ config.keys = {
 	{
 		key = "B",
 		mods = "CTRL",
-		action = wezterm.action.EmitEvent("toggle-opacity"),
+		action = act.EmitEvent("toggle-opacity"),
 	},
 	-- Run make command
 	{
@@ -63,13 +63,13 @@ config.keys = {
 	},
 }
 
-config.color_scheme = "Afterglow"
+config.color_scheme = "Black Metal (Marduk) (base16)"
 
 -- Background transparency
-local opacity = 0.9
+local opacity = 0.6
 config.window_background_opacity = opacity
 
--- Toggle function
+-- Toggle opacity function
 wezterm.on("toggle-opacity", function(window)
 	local overrides = window:get_config_overrides() or {}
 	if not overrides.window_background_opacity then
@@ -99,8 +99,12 @@ config.window_frame = {
 	font_size = 10.0,
 }
 
-config.font = wezterm.font("JetBrains Mono")
-config.font_size = 10.0
+config.font = wezterm.font({
+	family = "Iosevka Term",
+	stretch = "Normal",
+	weight = "Regular",
+})
+config.font_size = 11.0
 
 -- Tabs
 config.hide_tab_bar_if_only_one_tab = true
