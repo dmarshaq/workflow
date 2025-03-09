@@ -42,7 +42,7 @@ config.keys = {
 	},
 	-- Move to next split
 	{
-		key = "n",
+		key = "N",
 		mods = "CTRL",
 		action = act.ActivatePaneDirection("Next"),
 	},
