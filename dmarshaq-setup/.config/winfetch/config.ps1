@@ -7,7 +7,7 @@
 $ascii = $true
 
 # Set the version of Windows to derive the logo from.
-# $logo = "Windows 7"
+$logo = "Windows 11"
 
 # Specify width for image/logo
 $imgwidth = 26
@@ -18,20 +18,20 @@ $imgwidth = 26
 # Custom ASCII Art
 # This should be an array of strings, with positive
 # height and width equal to $imgwidth defined above.
-$CustomAscii = @(
-"           _-_.           "
-"        _-',^. `-_.       "
-"    ._-' ,'   `.   `-_    "
-"   !`-_.___________`-':::   "
-"   !   /\        /\::::   "
-"   ;  /  \      /..\:::   "
-"   ! /    \    /....\::   "
-"   !/      \  /......\:   "
-"   ;--.___. \/_.__.--;;   "
-"    '-_    `:!;;;;;;;'    "
-"       `-_, :!;;;''       "
-"           `-!'           "
-)
+# $CustomAscii = @(
+# "           _-_.           "
+# "        _-',^. `-_.       "
+# "    ._-' ,'   `.   `-_    "
+# "   !`-_.___________`-':::   "
+# "   !   /\        /\::::   "
+# "   ;  /  \      /..\:::   "
+# "   ! /    \    /....\::   "
+# "   !/      \  /......\:   "
+# "   ;--.___. \/_.__.--;;   "
+# "    '-_    `:!;;;;;;;'    "
+# "       `-_, :!;;;''       "
+# "           `-!'           "
+# )
 
 # Make the logo blink
 # $blink = $true

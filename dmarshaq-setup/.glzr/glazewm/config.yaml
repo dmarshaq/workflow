@@ -43,10 +43,10 @@ gaps:
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '50px'
-    right: '10px'
-    bottom: '10px'
-    left: '10px'
+    top: '90px'
+    right: '80px'
+    bottom: '80px'
+    left: '80px'
 
 window_effects:
   # Visual effects to apply to the focused window.
@@ -200,7 +200,7 @@ keybindings:
   # Change tiling direction. This determines where new tiling windows will
   # be inserted.
   - commands: ['toggle-tiling-direction']
-    bindings: ['alt+v']
+    bindings: ['alt+d']
 
   # Change focus from tiling windows -> floating -> fullscreen.
   - commands: ['wm-cycle-focus']
@@ -241,7 +241,7 @@ keybindings:
   # Launch CMD terminal. Alternatively, use `shell-exec wt` or
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
   # Terminal and Git Bash respectively.
-  - commands: ['shell-exec %ProgramFiles%/WezTerm/wezterm-gui.exe']
+  - commands: ['shell-exec %ProgramFiles%/Alacritty/Alacritty.exe']
     bindings: ['alt+enter']
 
   # Focus the next/previous workspace defined in `workspaces` config.
@@ -249,10 +249,6 @@ keybindings:
     bindings: ['alt+s']
   - commands: ['focus --prev-workspace']
     bindings: ['alt+a']
-
-  # Focus the workspace that last had focus.
-  - commands: ['focus --recent-workspace']
-    bindings: ['alt+d']
 
   # Change focus to a workspace defined in `workspaces` config.
   - commands: ['focus --workspace 1']
