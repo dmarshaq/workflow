@@ -4,7 +4,7 @@
 This repository documents a custom Windows workflow tailored to personal preferences, including essential software and keymaps for productivity and comfort.
 
 > **Note**  
-> "This *__Windows__* workflow based only on my and some standard preferences. It might not reflect your needs directly. Feel free to use it however you like! :relaxed: "
+> "This *__Windows__* workflow based only on my and some standard preferences. It might not reflect your needs directly. Feel free to use it however you like! :relaxed:"
 ## Software Used
 
 | Software                    | Description                                 |
