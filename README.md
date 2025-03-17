@@ -88,4 +88,5 @@ All configuration files are located in this repository. While the keymaps listed
 * Configuring Task Scheduler to Run `~/Scripts/startup.bat`
 * Personalizing Windows 11
 * Downloading and Setting `Iosevka Term` font
+* Downloading `RipGrep`
 
