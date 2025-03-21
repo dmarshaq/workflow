@@ -44,6 +44,6 @@ function ll {
     Get-ChildItem -Path . -Force -Hidden | Format-Table -AutoSize
 }
 
-
+$env:TERM='xterm-256color'
 oh-my-posh init pwsh --config 'C:\Users\mrsho\.config\powershell\oh-my-posh\ys.omp.customized.json' | Invoke-Expression
 
