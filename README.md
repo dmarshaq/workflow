@@ -7,14 +7,18 @@ This repository documents a custom Windows workflow tailored to personal prefere
 > "This *__Windows__* workflow based only on my and some standard preferences. It might not reflect your needs directly. Feel free to use it however you like! :relaxed:"
 ## Software Used
 
-| Software                    | Description                                 |
-|-----------------------------|---------------------------------------------|
-| **Alacritty**               | Quick terminal emulator                     |
-| **PowerShell + Oh My Posh** | Windows main command-line shell             |
-| **Microsoft PowerToys**     | Enhanced Windows system utilities           |
-| **GlazeWM + Zebar**         | Tiling window manager                       |
-| **Neovim**                  | Highly customizable text editor             |
+| Software                   | Description                                 |
+|----------------------------|---------------------------------------------|
+| **Alacritty**              | Quick terminal emulator                     |
+| **PowerShell + Oh My Posh**| Windows main command-line shell             |
+| **Microsoft PowerToys**    | Enhanced Windows system utilities           |
+| **GlazeWM + Zebar**        | Tiling window manager                       |
+| **Neovim**                 | Highly customizable text editor             |
 
+
+| One | Two | Three |
+|-----|-----|-------|
+|00000|11111|2222222|
 ---
 
 ## Personal Key Maps
@@ -89,4 +93,6 @@ All configuration files are located in this repository. While the keymaps listed
 * Personalizing Windows 11
 * Downloading and Setting `Iosevka Term` font
 * Downloading `RipGrep`
+
+
 

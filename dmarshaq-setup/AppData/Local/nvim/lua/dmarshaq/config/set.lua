@@ -32,6 +32,8 @@ vim.wo.cursorlineopt = "number"
 vim.opt.updatetime = 50
 vim.opt.scrolloff = 10
 
+vim.opt.shellslash = true
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
