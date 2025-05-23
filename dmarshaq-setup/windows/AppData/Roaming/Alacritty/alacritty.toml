@@ -11,8 +11,7 @@ opacity         = 0.8
 startup_mode    = "Windowed"
 
 [terminal]
-shell.program = "powershell.exe"
-shell.args = ["-NoLogo"]
+shell.program = "ubuntu.exe"
 
 [window.dimensions]
 columns = 0
@@ -27,7 +26,11 @@ history = 12000
 
 [font]
 builtin_box_drawing = false
-size                = 11
+size                = 14
+
+[font.glyph_offset]
+x = 0
+y = 0
 
 [font.bold]
 family = "IosevkaTerm Nerd Font"
@@ -36,10 +39,6 @@ style  = "Bold"
 [font.bold_italic]
 family = "IosevkaTerm Nerd Font"
 style  = "Bold Italic"
-
-[font.glyph_offset]
-x = 0
-y = 0
 
 [font.italic]
 family = "IosevkaTerm Nerd Font"
