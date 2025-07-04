@@ -244,6 +244,9 @@ keybindings:
   - commands: ['shell-exec %ProgramFiles%/Alacritty/Alacritty.exe']
     bindings: ['alt+enter']
 
+  - commands: ['shell-exec wt']
+    bindings: ['alt+shift+enter']
+
   # Focus the next/previous workspace defined in `workspaces` config.
   - commands: ['focus --next-workspace']
     bindings: ['alt+s']
