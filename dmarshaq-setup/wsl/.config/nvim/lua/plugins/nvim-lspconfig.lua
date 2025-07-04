@@ -4,6 +4,14 @@ local config = function()
 
 	-- enable keybinds only for when lsp server available
 	local on_attach = function(client, bufnr)
+        -- Disable diagnostics just for clangd
+        if client.name == "clangd" then
+            client.server_capabilities.publishDiagnostics = false
+        end
+        if client.name == "efm" then
+            client.server_capabilities.publishDiagnostics = false
+        end
+
 		-- keybind options
 		local opts = { noremap = true, silent = true, buffer = bufnr }
 
@@ -92,6 +100,7 @@ local config = function()
 	-- 		vim.lsp.buf.format({ name = "efm" })
 	-- 	end,
 	-- })
+    vim.diagnostic.enable(false)
 end
 
 return {
