@@ -1,11 +1,13 @@
 return {
     {
         "catppuccin/nvim",
-        name = 'catppuccin',
+        "kvrohit/rasmus.nvim",
+        "p00f/alabaster.nvim",
+
         priority = 1000,
         lazy = false,
         config = function()
-            vim.cmd("colorscheme catppuccin")
+            vim.cmd([[colorscheme alabaster]])
         end,
     },
 }
