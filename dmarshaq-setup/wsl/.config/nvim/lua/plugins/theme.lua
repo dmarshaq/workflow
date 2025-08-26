@@ -1,13 +1,18 @@
 return {
     {
-        "catppuccin/nvim",
         "kvrohit/rasmus.nvim",
-        "p00f/alabaster.nvim",
-
-        priority = 1000,
         lazy = false,
+    },
+    {
+        "p00f/alabaster.nvim",
+        lazy = false,
+    },
+    { 
+        "catppuccin/nvim",
+        priority = 1000, -- Load first.
+        lazy = false,    -- Load immediately.
         config = function()
-            vim.cmd([[colorscheme alabaster]])
+            vim.cmd.colorscheme("catppuccin")
         end,
     },
 }
