@@ -2,6 +2,7 @@ local opts = {
 	ensure_installed = {
 		"efm",
 		"lua_ls",
+        "typst",
 	},
 	automatic_installation = true,
 }

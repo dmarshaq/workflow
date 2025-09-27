@@ -52,6 +52,20 @@ local config = function()
 		},
 	})
 
+    -- java
+    lspconfig.jdtls.setup({
+        capabilities = capabilities,
+        on_attach = on_attach,
+    })
+
+
+    -- typst
+    lspconfig.tinymist.setup({
+        capabilities = capabilities,
+        on_attach = on_attach,
+    })
+
+
 	-- c
 	lspconfig.clangd.setup({
 		capabilities = capabilities,
